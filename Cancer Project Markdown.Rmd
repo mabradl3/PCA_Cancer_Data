@@ -18,8 +18,8 @@ library(rgl)
 color <- palette(brewer.pal(n = 3, name = "Dark2"))
 
 # Subset the data and visually inspect it
-leuk2 <- leuk[,c(5001, 1:5000)]
-View(leuk2)
+# leuk2 <- leuk[,c(5001, 1:5000)]
+# View(leuk2)
 ```
 
 Let's create a table to see how many samples of each cell we have.
