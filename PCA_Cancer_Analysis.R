@@ -35,6 +35,7 @@ legend(40000, -20000, legend = c("ALL-B", "ALL-T", "AML"), pch = 19, col = color
 sum(pcaOut$sdev[1:2]^2)/sum(pcaOut$sdev^2)
 # The first two components explain about 36% of the variation.
 
+# We can do the same thing with the first three components
 plot3d(x = pcaOut$x[,1], y = pcaOut$x[,2],z= pcaOut$x[,3],col = colors, xlab = "Principal Component 1", ylab = "Principal Component 2", zlab = "Principal Component 3")
-
 sum(pcaOut$sdev[1:3]^2)/sum(pcaOut$sdev^2)
+# The first three components explain about 47% of the variation.
