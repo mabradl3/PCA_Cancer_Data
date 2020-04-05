@@ -9,13 +9,15 @@ Let’s create a table to see how many samples of each cell we have.
     ## ALL-B ALL-T   AML 
     ##    19     7    12
 
-Randomly select two columns and plot them against each other.
+Randomly select two columns and plot them against each
+other.
 
-![](demo_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+![](Cancer-Project-Markdown_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
 
-Run the PCA and plot it.
+Run the PCA and plot
+it.
 
-![](demo_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![](Cancer-Project-Markdown_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
 From this plot, we can see that it is probable that sample 22 was
 mislabeled as ALL-B, when it should be ALL-T.
@@ -29,13 +31,3 @@ sum(pcaOut$sdev[1:2]^2)/sum(pcaOut$sdev^2)
     ## [1] 0.3582157
 
 The first two components explain about 36% of the variation.
-
-We can do the same thing with the first three components.
-
-``` r
-sum(pcaOut$sdev[1:3]^2)/sum(pcaOut$sdev^2)
-```
-
-    ## [1] 0.4689657
-
-The first three components explain about 47% of the variation.
